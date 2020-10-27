@@ -1,0 +1,58 @@
+<br>
+<br>
+<br>
+<!-- <div *ngIf="!cargando">
+    <p>Hola terminó de cargar</p>
+</div>
+
+<div *ngIf="cargando">
+    <img [src]="loading" alt="" srcset="">
+</div>
+
+<button  (click)="mostrarCargando()">
+    Alternar
+</button> -->
+
+<!-- Probar el ngFor en angular -->
+<!-- <div id="listaNombres" *ngFor=" let nombre of nombres">
+    <p>Hola mi nombre es: {{nombre}}</p>
+</div> -->
+
+<!-- <div id="listaNombres" *ngFor= "let producto of productos">
+    <p>El producto es: {{producto.nombre}} </p>
+    <p>Su stock es: {{producto.stock}} </p>
+    <p>El fabricante es: {{producto.fabricante}} </p>
+    <p>Fecha de vencimiento es: {{producto.fechaVencimiento}} </p>
+</div> -->
+<!-- Probar el switch en angular -->
+<!-- <div class="tab" [ngSwitch]="pestania">
+
+    <button (click)="cambiarPestania('perfil')">Perfil</button>
+    <button (click)="cambiarPestania('puntos')">Puntos</button>
+    <button (click)="cambiarPestania('info')">Info</button>
+    <div class="tabContenido">
+        <p *ngSwitchCase="'perfil'">Este es el perfil </p>
+        <p *ngSwitchCase="'puntos'">Este son los puntos </p>
+        <p *ngSwitchCase="'info'">Esta es la info </p>
+        <p *ngSwitchDefault="">Seleccione una pestaña</p>
+    </div>
+</div> -->
+
+<!-- Probar el ngClass en angular -->
+<button (click)="alternarFondoCuadrado()"> Alternar scss cuadrado</button>
+<div [ngClass]="{'cuadrado': mostrarCuadrado}">
+    <p>Aparece con un font verde</p>
+</div>
+
+<div id="listaNombres" *ngFor="let producto of productos">
+    <p [ngClass]="{'textoImportante': producto.importante, 'textoGrande': producto.textoGrande}">El producto es:
+        {{producto.nombre}} </p>
+    <p [ngClass]=" {'textoImportante': producto.importante, 'textoGrande': producto.textoGrande}">Su stock es:
+        {{producto.stock}} </p>
+    <p [ngClass]="{'textoImportante': producto.importante, 'textoGrande': producto.textoGrande}">El fabricante es:
+        {{producto.fabricante}} </p>
+    <p [ngClass]=" {'textoImportante': producto.importante, 'textoGrande': producto.textoGrande}">Fecha de vencimiento
+        es: {{producto.fechaVencimiento}} </p>
+    <br>
+    <p [class.textoGrande]="producto.textoGrande"> Hola, otra manera de hacer el ngClass</p>
+</div>

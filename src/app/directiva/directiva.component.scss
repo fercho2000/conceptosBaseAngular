@@ -1,0 +1,35 @@
+#listaNombres{
+    text-align: center;
+    border: 5px solid rgb(31, 184, 74);
+    padding: 5;
+    margin-top: 10px;
+}
+
+.tab {
+ 
+    border: 1px solid rgb(51, 138, 153);
+    width: 300px;
+    height: 300;
+    padding: 10px;
+}
+
+.tabContenido{
+    width: 90%;
+    height: 90%;
+    background: rgb(118, 121, 121);
+}
+
+
+.cuadrado {
+    width: 200px;
+    height: 200px;
+    background: rgb(21, 226, 21);
+}
+
+.textoImportante{
+    color: red;
+}
+
+.textoGrande{
+    font-size: 30px;
+}

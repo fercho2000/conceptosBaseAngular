@@ -1,0 +1,45 @@
+<h1>Hola soy etiqueta h1</h1>
+<p>Hola {{nombre}} </p>
+<h2>Hola soy etiqueta h2</h2>
+<h3>Hola soy etiqueta h3</h3>
+
+<!-- 
+<input type="text" [(ngModel)]="inputNuevo">
+
+<p>{{inputNuevo}}</p> -->
+<label for="correo"> correo:
+    <input type="text" [(ngModel)]="correo">
+
+</label>
+
+<label for="contraseña"> contraseña:
+    
+<input type="password" (ngModelChange)="escribirModelo()" [(ngModel)]="contrasena">
+</label>
+
+<button (click)="ingresar()">Iniciar</button>
+<span> </span>
+<button (dblclick)= "llamarAlert()">Doble clic </button>
+<br>
+<br>
+<label for="input">
+Evento de input: <input type="text" (input)="escribir($event)">
+
+</label>
+
+<br>
+<br>
+<label for="input">
+Evento de focus: <input type="text" (focus)="colorearFondo($event)">
+
+</label>
+
+<br>
+<br>
+<label for="keyDown">
+    lanzarEventoKeyDwon: 
+<input type="text" (keydown)="lanzarEventoKeyDwon($event)">
+
+</label>
+
+<img [src]="imagen" alt=""  (mouseleave)="reestablecerValoresImg($event)" (mouseenter)="cambiarTamanioImg($event)">
